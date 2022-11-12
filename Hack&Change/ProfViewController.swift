@@ -9,6 +9,7 @@ import UIKit
 
 class ProfViewController: UIViewController {
 
+    @IBOutlet weak var name: UILabel!
     @IBOutlet weak var profitLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +19,6 @@ class ProfViewController: UIViewController {
     }
     
     func setGradientBackground() {
-
         let gradient = CAGradientLayer()
         let blue = UIColor(red: 0.38, green: 0.71, blue: 0.91, alpha: 1.00)
         let green = UIColor(red: 1.00, green: 1.00, blue: 1.00, alpha: 1.00)

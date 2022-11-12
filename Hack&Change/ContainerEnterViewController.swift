@@ -23,11 +23,19 @@ class ContainerEnterViewController: UIViewController {
     }
     
     @IBAction func enterButtonTapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "ProfileVc")
-        vc?.modalPresentationStyle = .fullScreen
-        vc?.modalTransitionStyle = .crossDissolve
-        self.present(vc!, animated: true)
+        if phoneNumberLabel.text == "Nick" && passwordLabel.text == "123" {
+            let vc = storyboard?.instantiateViewController(withIdentifier: "ProfileVc")
+            vc?.modalPresentationStyle = .fullScreen
+            vc?.modalTransitionStyle = .crossDissolve
+            self.present(vc!, animated: true)
+        } else {
+            let alert = UIAlertController(title: "Неверный логин или пароль", message: "Проверьте правильность данных и повторите попытку.", preferredStyle: UIAlertController.Style.alert)
+                          alert.addAction(UIAlertAction(title: "Ок", style: UIAlertAction.Style.default, handler: nil))
+                          self.present(alert, animated: true, completion: nil)
+        }
+        
     }
+    
     
     @IBAction func registerButtonTapped(_ sender: Any) {
     }
@@ -58,9 +66,11 @@ class ContainerEnterViewController: UIViewController {
     }
 
     @IBAction func registerTapped(_ sender: Any) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "RegisterVC")
-        vc?.modalPresentationStyle = .formSheet
-        vc?.modalTransitionStyle = .crossDissolve
-        self.present(vc!, animated: true)
+      
+            let vc = storyboard?.instantiateViewController(withIdentifier: "RegisterVC")
+            vc?.modalPresentationStyle = .formSheet
+        vc?.modalTransitionStyle = .coverVertical
+            self.present(vc!, animated: true)
+       
     }
 }
