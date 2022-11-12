@@ -13,6 +13,7 @@
 		32858FE5291EB6B2009B9222 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32858FE3291EB6B2009B9222 /* Main.storyboard */; };
 		32858FE7291EB6B3009B9222 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32858FE6291EB6B3009B9222 /* Assets.xcassets */; };
 		32858FEA291EB6B3009B9222 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32858FE8291EB6B3009B9222 /* LaunchScreen.storyboard */; };
+		32859012291EF976009B9222 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32859011291EF976009B9222 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		32858FE6291EB6B3009B9222 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32858FE9291EB6B3009B9222 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32858FEB291EB6B3009B9222 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32859011291EF976009B9222 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				32858FDF291EB6B2009B9222 /* SceneDelegate.swift */,
 				32858FE1291EB6B2009B9222 /* ViewController.swift */,
 				32858FE3291EB6B2009B9222 /* Main.storyboard */,
+				32859011291EF976009B9222 /* ProfileViewController.swift */,
 				32858FE6291EB6B3009B9222 /* Assets.xcassets */,
 				32858FE8291EB6B3009B9222 /* LaunchScreen.storyboard */,
 				32858FEB291EB6B3009B9222 /* Info.plist */,
@@ -140,6 +143,7 @@
 			files = (
 				32858FE2291EB6B2009B9222 /* ViewController.swift in Sources */,
 				32858FDE291EB6B2009B9222 /* AppDelegate.swift in Sources */,
+				32859012291EF976009B9222 /* ProfileViewController.swift in Sources */,
 				32858FE0291EB6B2009B9222 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
