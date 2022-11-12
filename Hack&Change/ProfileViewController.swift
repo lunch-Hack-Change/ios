@@ -9,7 +9,11 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var cardImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        profileImage.layer.cornerRadius = profileImage.bounds.height / 2
     }
 }

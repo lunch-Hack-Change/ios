@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         roundCorners()
+        print(self.view.bounds.height)
     }
     
     @IBAction func registerTapped(_ sender: Any) {
@@ -34,6 +35,8 @@ class ViewController: UIViewController {
     }
     
     func roundCorners() {
+        passwordTextField.layer.masksToBounds = true
+        phoneText.layer.masksToBounds = true
         passwordTextField.layer.cornerRadius = passwordTextField.bounds.height / 2
         enterButton.layer.cornerRadius = enterButton.bounds.height / 2
         phoneText.layer.cornerRadius = phoneText.bounds.height / 2
