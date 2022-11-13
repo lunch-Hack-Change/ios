@@ -10,13 +10,8 @@ import UIKit
 
 
 class ChatViewController: UIViewController, UITextViewDelegate {
-   
-    
     
     @IBOutlet weak var messageTextView: UITextView!
-    
-    
-    
     var navBar = UINavigationBar(frame: CGRect(x: 0, y: 50, width: UIScreen.main.bounds.width, height: 70))
     
     
@@ -27,26 +22,26 @@ class ChatViewController: UIViewController, UITextViewDelegate {
         messageTextView.layer.cornerRadius = messageTextView.bounds.height / 2 - 5
         
         self.tabBarController?.tabBar.isHidden = true
-    
+        
     }
-   
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first as? UITouch {
             messageTextView.endEditing(true)
         }
     }
     func setNavigationBar() {
-       
+        
         let navItem = UINavigationItem(title: "Центр заботы о клиентах")
-       
+        
         let backImage = UIImage(named: "backImage")
         let backButton = UIBarButtonItem(image: backImage, style: .plain, target: nil, action: #selector(backButtonTapped))
         backButton.tintColor = UIColor(red: 0.50, green: 0.50, blue: 0.50, alpha: 1.00)
-      
+        
         navBar.setItems([navItem], animated: false)
         navBar.backgroundColor = .white
         navBar.barTintColor = .white
-
+        
         navItem.leftBarButtonItem = backButton
         
         self.view.addSubview(navBar)
@@ -60,6 +55,4 @@ class ChatViewController: UIViewController, UITextViewDelegate {
         
         
     }
-    
-  
 }

@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		324833C1291FD087009CB080 /* ProfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324833C0291FD087009CB080 /* ProfViewController.swift */; };
-		324833C3291FD23D009CB080 /* activeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324833C2291FD23D009CB080 /* activeModel.swift */; };
-		324833C5291FD2C2009CB080 /* activeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324833C4291FD2C2009CB080 /* activeCollectionViewCell.swift */; };
-		324833C7291FD2D9009CB080 /* ActiveCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324833C6291FD2D9009CB080 /* ActiveCollectionView.swift */; };
 		324833C9291FD4E2009CB080 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324833C8291FD4E2009CB080 /* ChatViewController.swift */; };
 		324833CB29202114009CB080 /* ContainerEnterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324833CA29202114009CB080 /* ContainerEnterViewController.swift */; };
 		324833CD29204A9A009CB080 /* RegisterControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324833CC29204A9A009CB080 /* RegisterControllerViewController.swift */; };
@@ -25,9 +22,6 @@
 
 /* Begin PBXFileReference section */
 		324833C0291FD087009CB080 /* ProfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfViewController.swift; sourceTree = "<group>"; };
-		324833C2291FD23D009CB080 /* activeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activeModel.swift; sourceTree = "<group>"; };
-		324833C4291FD2C2009CB080 /* activeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activeCollectionViewCell.swift; sourceTree = "<group>"; };
-		324833C6291FD2D9009CB080 /* ActiveCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveCollectionView.swift; sourceTree = "<group>"; };
 		324833C8291FD4E2009CB080 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		324833CA29202114009CB080 /* ContainerEnterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerEnterViewController.swift; sourceTree = "<group>"; };
 		324833CC29204A9A009CB080 /* RegisterControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterControllerViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +47,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3202B8912920E604002E810B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				32858FE1291EB6B2009B9222 /* ViewController.swift */,
+				324833C0291FD087009CB080 /* ProfViewController.swift */,
+				32859011291EF976009B9222 /* ProfileViewController.swift */,
+				324833CA29202114009CB080 /* ContainerEnterViewController.swift */,
+				324833C8291FD4E2009CB080 /* ChatViewController.swift */,
+				324833CC29204A9A009CB080 /* RegisterControllerViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3202B8922920E634002E810B /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				32858FDD291EB6B2009B9222 /* AppDelegate.swift */,
+				32858FDF291EB6B2009B9222 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
 		32858FD1291EB6B2009B9222 = {
 			isa = PBXGroup;
 			children = (
@@ -72,18 +88,9 @@
 		32858FDC291EB6B2009B9222 /* Hack&Change */ = {
 			isa = PBXGroup;
 			children = (
-				32858FDD291EB6B2009B9222 /* AppDelegate.swift */,
-				32858FDF291EB6B2009B9222 /* SceneDelegate.swift */,
-				32858FE1291EB6B2009B9222 /* ViewController.swift */,
-				324833CC29204A9A009CB080 /* RegisterControllerViewController.swift */,
+				3202B8922920E634002E810B /* Delegates */,
+				3202B8912920E604002E810B /* Controllers */,
 				32858FE3291EB6B2009B9222 /* Main.storyboard */,
-				324833CA29202114009CB080 /* ContainerEnterViewController.swift */,
-				324833C8291FD4E2009CB080 /* ChatViewController.swift */,
-				32859011291EF976009B9222 /* ProfileViewController.swift */,
-				324833C0291FD087009CB080 /* ProfViewController.swift */,
-				324833C2291FD23D009CB080 /* activeModel.swift */,
-				324833C4291FD2C2009CB080 /* activeCollectionViewCell.swift */,
-				324833C6291FD2D9009CB080 /* ActiveCollectionView.swift */,
 				32858FE6291EB6B3009B9222 /* Assets.xcassets */,
 				32858FE8291EB6B3009B9222 /* LaunchScreen.storyboard */,
 				32858FEB291EB6B3009B9222 /* Info.plist */,
@@ -162,10 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				324833C7291FD2D9009CB080 /* ActiveCollectionView.swift in Sources */,
 				32858FE2291EB6B2009B9222 /* ViewController.swift in Sources */,
-				324833C5291FD2C2009CB080 /* activeCollectionViewCell.swift in Sources */,
-				324833C3291FD23D009CB080 /* activeModel.swift in Sources */,
 				32858FDE291EB6B2009B9222 /* AppDelegate.swift in Sources */,
 				324833CB29202114009CB080 /* ContainerEnterViewController.swift in Sources */,
 				324833CD29204A9A009CB080 /* RegisterControllerViewController.swift in Sources */,

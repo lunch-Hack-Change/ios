@@ -30,8 +30,8 @@ class ContainerEnterViewController: UIViewController {
             self.present(vc!, animated: true)
         } else {
             let alert = UIAlertController(title: "Неверный логин или пароль", message: "Проверьте правильность данных и повторите попытку.", preferredStyle: UIAlertController.Style.alert)
-                          alert.addAction(UIAlertAction(title: "Ок", style: UIAlertAction.Style.default, handler: nil))
-                          self.present(alert, animated: true, completion: nil)
+            alert.addAction(UIAlertAction(title: "Ок", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
         
     }
@@ -61,7 +61,7 @@ class ContainerEnterViewController: UIViewController {
     }
     
     func setGradientBackground() {
-
+        
         let gradient = CAGradientLayer()
         let blue = UIColor(red: 0.38, green: 0.71, blue: 0.91, alpha: 1.00)
         let green = UIColor(red: 0.36, green: 0.36, blue: 0.73, alpha: 1.00)
@@ -71,13 +71,13 @@ class ContainerEnterViewController: UIViewController {
         view.layer.addSublayer(gradient)
         self.view.layer.insertSublayer(gradient, at:0)
     }
-
+    
     @IBAction func registerTapped(_ sender: Any) {
-      
-            let vc = storyboard?.instantiateViewController(withIdentifier: "RegisterVC")
-            vc?.modalPresentationStyle = .formSheet
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "RegisterVC")
+        vc?.modalPresentationStyle = .formSheet
         vc?.modalTransitionStyle = .coverVertical
-            self.present(vc!, animated: true)
-       
+        self.present(vc!, animated: true)
+        
     }
 }

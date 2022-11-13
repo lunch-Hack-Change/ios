@@ -8,7 +8,7 @@
 import UIKit
 
 class ProfViewController: UIViewController {
-
+    
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var profitLabel: UILabel!
     override func viewDidLoad() {
@@ -26,7 +26,7 @@ class ProfViewController: UIViewController {
         gradient.locations = [0, 0.6, 1.5]
         gradient.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height)
         view.layer.addSublayer(gradient)
-                
+        
         gradient.startPoint = CGPoint(x: 0.5, y: 0.0)
         gradient.endPoint = CGPoint(x: 1.0, y: 1.0)
         self.view.layer.insertSublayer(gradient, at:0)

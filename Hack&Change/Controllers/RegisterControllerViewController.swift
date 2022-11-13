@@ -8,7 +8,7 @@
 import UIKit
 
 class RegisterControllerViewController: UIViewController {
-
+    
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var nick: UITextField!
     @IBOutlet weak var registerButton: UIButton!
@@ -22,10 +22,10 @@ class RegisterControllerViewController: UIViewController {
     }
     
     func roundCorners() {
-
+        
         self.view.layer.masksToBounds = true
         self.view.layer.cornerRadius = 40
-       
+        
         password.layer.masksToBounds = true
         nick.layer.masksToBounds = true
         secondName.layer.masksToBounds = true
@@ -46,7 +46,7 @@ class RegisterControllerViewController: UIViewController {
             secondName.endEditing(true)
         }
     }
-   
+    
     func setGradientBackground() {
         let gradient = CAGradientLayer()
         let blue = UIColor(red: 0.38, green: 0.71, blue: 0.91, alpha: 1.00)
@@ -57,17 +57,17 @@ class RegisterControllerViewController: UIViewController {
         view.layer.addSublayer(gradient)
         self.view.layer.insertSublayer(gradient, at:0)
     }
-
+    
     @IBAction func registerTapped(_ sender: Any) {
         if !name.text!.isEmpty && !nick.text!.isEmpty && !password.text!.isEmpty && !secondName.text!.isEmpty {
             let vc = storyboard?.instantiateViewController(withIdentifier: "EnterVc")
             vc?.modalPresentationStyle = .fullScreen
-        vc?.modalTransitionStyle = .coverVertical
+            vc?.modalTransitionStyle = .coverVertical
             self.present(vc!, animated: true)
         } else {
             let alert = UIAlertController(title: "Ошибка", message: "Проверьте правильность вводимых данных.", preferredStyle: UIAlertController.Style.alert)
-                          alert.addAction(UIAlertAction(title: "Ок", style: UIAlertAction.Style.default, handler: nil))
-                          self.present(alert, animated: true, completion: nil)
+            alert.addAction(UIAlertAction(title: "Ок", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
     }
 }
