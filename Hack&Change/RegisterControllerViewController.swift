@@ -37,6 +37,15 @@ class RegisterControllerViewController: UIViewController {
         registerButton.layer.cornerRadius = registerButton.bounds.height / 2
         
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first as? UITouch {
+            name.endEditing(true)
+            nick.endEditing(true)
+            password.endEditing(true)
+            secondName.endEditing(true)
+        }
+    }
    
     func setGradientBackground() {
         let gradient = CAGradientLayer()

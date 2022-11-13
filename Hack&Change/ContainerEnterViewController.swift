@@ -40,6 +40,13 @@ class ContainerEnterViewController: UIViewController {
     @IBAction func registerButtonTapped(_ sender: Any) {
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first as? UITouch {
+            passwordLabel.endEditing(true)
+            phoneNumberLabel.endEditing(true)
+        }
+    }
+    
     func roundCorners() {
         
         self.view.layer.masksToBounds = true
