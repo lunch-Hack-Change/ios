@@ -33,6 +33,7 @@ Swift (iOS), React JS (Web)</>
 
 <h3>Используемый стек технологий:</>
 <div>
+<li>Swift</>
 <li>Вёрстка с помощью Stroryboards, UIkit</>
 <li>Foundation</>
 <li>Кастомный градиентный цвет - CAGradientLayer</>
